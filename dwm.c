@@ -83,7 +83,7 @@ enum { NetSupported, NetWMName, NetWMState, NetWMCheck,
        NetWMWindowTypeDialog, NetClientList, NetLast }; /* EWMH atoms */
 enum { Manager, Xembed, XembedInfo, XLast }; /* Xembed atoms */
 enum { WMProtocols, WMDelete, WMState, WMTakeFocus, WMLast }; /* default atoms */
-enum { ClkTagBar, ClkTabBar, ClkLtSymbol, ClkStatusText, C
+enum { ClkTagBar, ClkTabBar, ClkLtSymbol, ClkStatusText,
        ClkClientWin, ClkRootWin, ClkLast }; /* clicks */
 
 typedef union {
