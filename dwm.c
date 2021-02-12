@@ -573,10 +573,10 @@ cleanup(void)
 	if (showsystray) {
 		XUnmapWindow(dpy, systray->win);
 		XDestroyWindow(dpy, systray->win);
-		XUnmapWindow(dpy, mon->tabwin);
-		XDestroyWindow(dpy, mon->tabwin);
 		free(systray);
-	}	
+	}
+	XUnmapWindow(dpy, mon->tabwin);
+	XDestroyWindow(dpy, mon->tabwin);
 	for (i = 0; i < CurLast; i++)
 		drw_cur_free(drw, cursor[i]);
 	for (i = 0; i < LENGTH(colors); i++)
